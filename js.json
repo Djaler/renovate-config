@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "github>djaler/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "deps"
+    },
+    {
+      "matchPackageNames": [
+        "typescript",
+        "ttypescript"
+      ],
+      "matchPackagePatterns": [
+        "vite",
+        "rollup"
+      ],
+      "semanticCommitType": "build",
+      "semanticCommitScope": "deps"
+    },
+    {
+      "matchPackageNames": [
+        "@vue/test-utils"
+      ],
+      "matchPackagePatterns": [
+        "jest",
+        "stryker"
+      ],
+      "semanticCommitType": "test",
+      "semanticCommitScope": "deps"
+    }
+  ]
+}
