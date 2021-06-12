@@ -32,6 +32,11 @@
       ],
       "semanticCommitType": "test",
       "semanticCommitScope": "deps"
+    },
+    {
+      "extends": "monorepo:vue",
+      "excludePackageNames": ["@vue/test-utils"],
+      "groupName": "vue monorepo"
     }
   ]
 }
