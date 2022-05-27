@@ -2,6 +2,9 @@
   "extends": [
     "github>djaler/renovate-config"
   ],
+  "ignorePresets": [
+    "group:vueMonorepo"
+  ],
   "packageRules": [
     {
       "matchDepTypes": [
@@ -32,11 +35,6 @@
       ],
       "semanticCommitType": "test",
       "semanticCommitScope": "deps"
-    },
-    {
-      "extends": "monorepo:vue",
-      "excludePackageNames": ["@vue/test-utils"],
-      "groupName": "vue monorepo"
     }
   ]
 }
