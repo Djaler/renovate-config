@@ -31,7 +31,8 @@
       ],
       "matchPackagePatterns": [
         "jest",
-        "stryker"
+        "stryker",
+        "vitest"
       ],
       "semanticCommitType": "test",
       "semanticCommitScope": "deps"
